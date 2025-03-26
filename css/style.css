@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+
+* {
+    font-family: "Lovers Quarrel", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Estilizando o corpo da página */
+body {
+    font-family: 'Lovers Quarrel', cursive;
+    background-color: #ffebf0;  /* Rosa claro */
+    color: #a52a2a;  /* Cor do texto */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container central */
+.container {
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    border-radius: 15px;
+    max-width: 600px;
+}
+
+/* Título e data */
+h1 {
+    font-size: 4em;
+    margin-bottom: 0.3em;
+    color: #d6336c;
+}
+
+#dataInicio {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #555;
+}
+
+/* Contador */
+#contador {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Deixando o contador mais charmoso */
+#contador span {
+    font-size: 1.5em;
+    color: #d6336c;
+    padding: 0 5px;
+}
+
+/* Imagens do casal - estilo galeria */
+article {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Estilizando cada imagem */
+.casal {
+    width: 180px;
+    height: 220px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito ao passar o mouse nas fotos */
+.casal:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.video-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilizando o vídeo com borda e margem charmosa */
+iframe {
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    border: 5px solid #d6336c;
+    width: 560px;
+    height: 315px;
+    max-width: 100%;
+    margin: 20px;
+    padding: 5px;
+    background-color: #fff5f8;
+}
+
+/* Responsividade para telas pequenas (celulares) */
+@media (max-width: 357px) (max-width: 600px){
+    body {
+        background-color: #ffebf0; /* Mantém o fundo rosa claro */
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    iframe {
+        width: 100%; /* Ocupa toda a largura da tela em dispositivos móveis */
+        height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+        margin: 10px 0;
+    }
+
+    .casal {
+        width: 150px; /* Ajusta as imagens para telas pequenas */
+        height: 180px;
+    }
+}
+
+/* Responsividade para telas médias (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        background-color: #ffebf0; /* Mantém o fundo rosa claro */
+    }
+
+    h1 {
+        font-size: 2.8em;
+    }
+
+    iframe {
+        width: 80%; /* Ajusta o vídeo para tablets */
+        height: 280px;
+    }
+
+    .casal {
+        width: 170px;
+        height: 200px;
+    }
+}
+
+/* Responsividade para telas grandes (PCs) */
+@media (min-width: 1025px) {
+    body {
+        background-color: #ffebf0; /* Mantém o fundo rosa claro */
+    }
+
+    iframe {
+        width: 560px;
+        height: 315px;
+    }
+}
+p{
+    font-size: 2em;
+}
